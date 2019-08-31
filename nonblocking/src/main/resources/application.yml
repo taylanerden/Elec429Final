@@ -1,0 +1,19 @@
+spring:
+  data:
+    redis:
+      hostname: '127.0.0.1'
+      port: 6379
+      password:
+server:
+  port: 8081
+
+---
+spring:
+  profiles: kubernetes
+  data:
+    redis:
+      hostname: ${REDIS_IP}
+      port: 6379
+      password:
+server:
+  port: 8081

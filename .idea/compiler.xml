@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="client" />
+        <module name="nonblocking" />
+        <module name="elec429" />
+        <module name="blocking" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Elec429" options="-parameters" />
+      <module name="blocking" options="-parameters" />
+      <module name="client" options="-parameters" />
+      <module name="elec429" options="-parameters" />
+      <module name="nonblocking" options="-parameters" />
+    </option>
+  </component>
+</project>

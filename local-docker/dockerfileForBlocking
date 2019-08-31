@@ -1,0 +1,11 @@
+FROM openjdk:latest
+
+WORKDIR /tmp/
+
+ENV SPRING_PROFILES_ACTIVE kubernetes
+
+ENV REDIS_IP redis
+
+COPY blocking-0.0.1.jar /tmp/blocking-0.0.1.jar
+
+CMD ["java", "-jar", "blocking-0.0.1.jar"]

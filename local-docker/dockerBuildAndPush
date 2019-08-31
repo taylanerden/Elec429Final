@@ -1,0 +1,19 @@
+docker build -f dockerfileForBlocking . -t elec429blocking:v01
+
+docker build -f dockerfileForNonBlocking . -t elec429nonblocking:v01
+
+docker build -f dockerfileForClient . -t elec429client:v01
+
+docker tag elec429blocking:v01 taylanerden/elec429blocking:v01
+
+docker tag elec429nonblocking:v01 taylanerden/elec429nonblocking:v01
+
+docker tag elec429client:v01 taylanerden/elec429client:v01
+
+docker push taylanerden/elec429blocking:v01
+
+docker push taylanerden/elec429nonblocking:v01
+
+docker push taylanerden/elec429client:v01
+
+

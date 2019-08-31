@@ -1,0 +1,6 @@
+server:
+  port: 8080
+client:
+  endpoint:
+    nonblocking: 'http://172.17.0.9:8081'
+    blocking: 'http://172.17.0.2:8082'
